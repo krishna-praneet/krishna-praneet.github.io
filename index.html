@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Krishna's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- <div class="p-5 bg-primary text-white text-center">
+  <h1>My First Bootstrap 5 Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div> -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#about">Krishna Praneet Gudipaty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-2 justify-content-center" >
+      <img class="fakeimg " src="images/profile.png" alt="Profile" style="margin-bottom: 1.5%;"/>
+      <!-- <p class="fw-bold text-center mt-1 fs-5">Krishna Praneet Gudipaty</p> -->
+      <h4 class="mt-4">Krishna Praneet Gudipaty</h3>
+      <p>Master of Science <br> <a href="https://www.cics.umass.edu/" class="text-secondary">College of Information and Computer Sciences</a> <br> Univ. of Massachusetts Amherst</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="container">
+          <img src="images/deskera.jpeg" alt="Deskera" class="img-thumbnail">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8 ms-5" id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is Krishna Praneet, I am currently working pursuing a Master of Science degree in Computer Science at the University of Massachusetts Amherst. I’m working towards being an expert in the process of designing and developing large scale, secure and reliant software. As part of achieving this, I am taking advanced coursework in distributed and operating systems, software engineering, secure blockchain systems and machine learning.</p>
+      <p>My prior experiences have also helped me understand the process of building and analysing large scale software. I worked for 2 years as a Software Development Engineer at Deskera and was involved with full stack development in Java Springboot and React.js. I received my Bachelor’s from the Indian Institute of Technology Madras, Chennai during which I have worked as a Research Intern with Boeing and Software Intern at Publicis Sapient over the summers (2018-19). I also served as a Teaching Assistant for delivering material on computational materials in MATLAB for the course Phase Transformations (Spring 2020).</p>
+      <p>In the interest of broadening my skillset, during my master’s, I have taken advanced courses in Machine Learning, Quantum information systems, software engineering, distributed and operating systems and in blockchain systems. Over the summer, I’ve been working on developing software libraries for decoding Quantum LDPC codes in Julia and implementing the ideas from my coursework.</p>
+
+      <h2 class="mt-5" id="projects">Projects</h2><hr>
+
+      <!-- Deskera -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">    
+          <h5>LDPC Decoders for Quantum Error Correcting Codes</h5>
+        </div>
+        <em>Jun '23 - Present</em>
+      </div>
+      
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">    
+          <h5>Stock Trading System</h5>
+        </div>
+        <em>Feb '23 - May '23</em>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">    
+          <h5>Stock Recommendation System</h5>
+        </div>
+        <em>Feb '23 - Feb '23</em>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">    
+          <h5>Elevation-based Navigation System (EleNa)</h5>
+        </div>
+        <em>Oct '22 - Dec '22</em>
+      </div>
+
+
+      <h2 class="mt-5" id="experience">Industry Experience</h2><hr>
+      <!-- Deskera -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="images/deskera.jpeg" alt="Deskera" class="company-icon" /> 
+          <div class="d-flex ms-2">
+            <h5>Deskera</h5>
+            <p class="ms-1"> - Software Development Engineer (Full-stack)</p>
+          </div>
+        </div>
+        <em>Dec '20 - Jul '22</em>
+      </div>
+      
+      <!-- Publicis Sapient -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="images/publicis-sapient.png" alt="Publicis Sapient" class="company-icon" /> 
+          <div class="d-flex ms-2">
+            <h5>Publicis Sapient</h5>
+            <p class="ms-1">- Software Engineer Intern (Full-stack)</p>
+          </div>
+        </div>
+        <em>May '19 - Jul '19</em>
+      </div>
+
+      <!-- Boeing -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="images/boeing.png" alt="Boeing" class="company-icon" /> 
+          <div class="d-flex ms-2">
+            <h5>Boeing</h5>
+            <p class="ms-1">- Software Research Intern (MATLAB)</p>
+          </div>
+        </div>
+        <em>Jun '18 - Jul '18</em>
+      </div>
+      
+
+
+      <!-- <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+    </div>
+    <!-- <div class="col-sm-2 pr-2"></div> -->
+  </div>
+</div>
+
+<div class="mt-5 p-1 bg-dark text-white text-center">
+  <p>Thanks for visiting!</p>
+</div>
+
+</body>
+</html>

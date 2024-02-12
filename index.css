@@ -1,0 +1,10 @@
+.fakeimg {
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid rgb(237, 237, 237);
+}
+
+.company-icon {
+  width: 30px;
+  height: 30px;
+}
