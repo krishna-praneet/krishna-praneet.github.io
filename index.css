@@ -9,6 +9,16 @@
   height: 30px;
 }
 
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.line-icon {
+  width: 15px;
+  height: 15px;
+}
+
 .button:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 1);
@@ -17,4 +27,143 @@
 
 .trans {
   transition: 0.5s ; 
+}
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  /* font-weight: 700; Bold */
+  /* padding-top: 60px;  */
+}
+
+.caveat-font {
+  font-family: 'Caveat', cursive;
+}
+
+.amatic-font {
+  font-family: 'Amatic SC', cursive;
+}
+
+.super-large {
+  font-size: 3rem; /* or any size you want */
+  line-height: 1.1;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.super-large:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+.normal-text {
+  font-size: 1rem;      /* normal body size */
+  font-weight: 400;     /* normal weight */
+  font-family: 'Raleway', Arial, sans-serif; /* or your body font */
+  display: block;       /* or inline if you want it on the same line */
+}
+
+.hr-right {
+  width: 20%; 
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.hr-left {
+  width: 20%;
+  margin-left: 0;
+  margin-right: auto;
+  transition: transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  transform-origin: left;
+}
+
+.hr-left.animate {
+  transform: scaleX(0);
+}
+
+.hr-left.move-right {
+  transform: translateX(400%);
+}
+
+.hr-middle {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  height: 3px;
+  background: linear-gradient(to bottom, #6c757d 0%, #6c757d 40%, transparent 40%, transparent 60%, #6c757d 60%, #6c757d 100%);
+}
+
+a {
+  /* text-decoration: none; */
+  color: #5bc0ff;
+}
+
+code {
+  color: inherit;
+  background: none;
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.corner-border-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.corner-border-wrapper img {
+  display: block;
+}
+
+.corner-border-wrapper::before,
+.corner-border-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 40px;   /* Length of the border */
+  height: 40px;  /* Length of the border */
+  border: 0.5px solid #6c757d; /* Color and thickness */
+}
+
+.corner-border-wrapper::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-border-wrapper::after {
+  bottom: 0;
+  right: 0;
+  border-top: none;
+  border-left: none;
+}
+
+.super-large:hover {
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+.typewriter-cursor::after {
+  content: '|';
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#hr-trigger,
+#typewriter-email {
+  cursor: pointer;
+}
+
+#profile-pic {
+  transition: transform 0.1s linear;
+  cursor: grab;
+}
+#profile-pic:active {
+  cursor: grabbing;
 }

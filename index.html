@@ -8,6 +8,9 @@
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,203 +22,113 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav mx-auto">
       <li class="nav-item">
-        <a class="nav-link active button trans" href="#about">Krishna Praneet Gudipaty</a>
+        <a class="nav-link active button trans" href="index.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link button trans" href="#projects">Projects</a>
+        <a class="nav-link button trans" href="bio.html">Bio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link button trans" href="#experience">Experience</a>
+        <a class="nav-link button trans" href="bio.html#experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link button trans" href="#education">Education</a>
+        <a class="nav-link button trans" href="bio.html#education">Education</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link button trans" href="#academic">Teaching</a>
+        <a class="nav-link button trans" href="bio.html#academic">Academic</a>
       </li>
       <li class="nav-item">
         <a class="nav-link button trans" href="files/2024-07-22_KrishnaPraneet_Gudipaty_Resume.pdf" target="_blank">Resume</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li> -->
+      <li class="nav-item">
+        <a class="nav-link button trans" href="quant.html">Quant</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link button trans btn" onclick="toggleDarkMode()"><img class="pb-1" src="images/dark-mode.svg"></a>
       </li>
-      
     </ul>
   </div>
 </nav>
 
 <div class="container mt-5">
   <div class="row">
-    <div class="col-sm-2 justify-content-center" >
-      <img class="fakeimg " src="images/profile.png" alt="Profile" style="margin-bottom: 1.5%;"/>
-      <!-- <p class="fw-bold text-center mt-1 fs-5">Krishna Praneet Gudipaty</p> -->
-      <h4 class="mt-4">Krishna Praneet Gudipaty</h3>
-      <p>Master of Science <br> <a href="https://www.cics.umass.edu/" class="text-secondary">College of Information and Computer Sciences</a> <br> University of Massachusetts Amherst</p>
-      <p><img src="images/location-logo.svg"> Amherst, MA, USA</p>
-      <!-- <p class="">Connect with me!</p> -->
-      <p><img src="images/email-logo.svg" class="me-2">kgudipaty@umass.edu</p>
-      <p><a href="https://www.linkedin.com/in/krishna-praneet/" class="text-secondary"><img src="images/linkedin-logo.svg" class="me-2">krishna-praneet</a></p>
-      <p><a href="https://github.com/krishna-praneet" class="text-secondary"><img src="images/github-logo.svg" class="me-2">krishna-praneet</a></p>
-      <hr class="d-sm-none">
+    <div class="col-sm-10 mx-auto" id="about">
+      <div class="d-flex flex-column align-items-center">
+        <img id="profile-pic" class="fakeimg" src="images/profile.png" alt="Profile" />
+        <h1 class="mt-3 amatic-font super-large">Krishna Praneet Gudipaty</h1>
+        <div>pronounced: /ˈkrɪʃ.nə/ (krish-nuh)</div>
+        <!-- <div>Ph.D. Student</div><div>University of Massachusetts Amherst</div> -->
+        <div>
+          <code id="typewriter-email"></code>
+        </div>
+        <div class="mt-2 mb-2">
+          <a href="https://www.linkedin.com/in/krishna-praneet/" class="text-secondary"><img src="images/linkedin-logo.svg" class="me-2 contact-icon"></a>
+          <a href="https://github.com/krishna-praneet" class="text-secondary"><img src="images/github-logo.svg" class="me-2 contact-icon"></a>
+          <a href="https://scholar.google.com/citations?user=iWacs9AAAAAJ&hl=en" class="text-secondary"><img src="images/google-scholar-logo.svg" class="me-2 contact-icon"></a>
+        </div>
+      </div>
+      
+      
+      <h2 id="hr-trigger" class="mt-2 caveat-font">About me</h2><hr class="hr-left"/>
+      <p class="ms-2">
+        <!-- <span style="font-size: 1.5em; line-height: 1; vertical-align: baseline;">Hi!</span> -->
+        I love building things—and there’s something fascinating about how lines of code can transform into meaningful systems that power real-world applications.
+        <!-- </p>
+        <p class="ms-2"> -->
+        Currently, I am pursuing a Ph.D. in Computer Science at the <a href="https://umass.edu/" class="text-secondary">University of Massachusetts Amherst</a>, broadly working on distributed systems and networking, optimization and machine learning. I hold an M.S. degree in Computer Science from UMass Amherst and B.Tech. degree from the <a href="https://www.iitm.ac.in/" class="text-secondary">Indian Institute of Technology Madras</a>. I also have 2+ years of industry experience in developing and maintaining webapps for large-scale, distributed processing of data. Check out - <a href="bio.html" class="text-secondary">Biography</a>.
+        </p>
+      </p>
+
+      <p class="ms-2">
+        Beyond research, I developed a strong interest in financial markets, particularly in how data and technology drive modelling for real-time decisions and pricing. What captivated me is the union of my love for mathematics and programming. This is how I spend rest of my time - check out <a href="quant.html" class="text-secondary">Quant</a>.
+      </p>
+      
+      <p class="ms-2">What I've been working on recently:</p>
+
+      <hr class="hr-middle"/>
+      <div class="d-flex">
+        <div class="d-flex justify-content-end w-50 px-3">
+          <div class="corner-border-wrapper d-flex justify-content-center align-items-center">
+            <img src="images/mel.png" class="img-fluid" style="height: 200px; object-fit: contain; background-color: #ffffff;">
+          </div>
+        </div>
+        <div class="d-flex flex-column w-50 justify-content-center text-center">
+          <em class="fw-bold">MEL: Multi-level Ensemble Learning - <a href="https://www.arxiv.org/abs/2506.20094" class="text-secondary">paper</a><img src="images/arxiv-logo.svg" class="ms-1 line-icon"></em>
+          <p class="mt-2 px-5">
+            A novel Machine Learning framework for resilient AI/ML inference in heterogeneous edge environments. 
+            <!-- We show that our ensemble model, sized at 40% of the original model, achieves similar performance, while preserving 95.6% of ensemble accuracy in the case of failures when trained using MEL. -->
+          </p>
+        </div>
+      </div>
+      
+      <hr class="hr-middle"/>
+      <div class="d-flex">
+        <div class="d-flex flex-column w-50 justify-content-center text-center">
+            <em class="fw-bold">LDPCDecoders.jl - <a href="https://github.com/krishna-praneet/LDPCDecoders.jl" class="text-secondary">v0.3.3</a><img src="images/tag.png" class="ms-1 line-icon"></em>
+          <p class="mt-2 px-5">
+            A software library of fast and efficient implementations of Quantum <a href="https://en.wikipedia.org/wiki/Low-density_parity-check_code" class="text-secondary">LDPC</a> (qLDPC) decoders in <a href="https://julialang.org/" class="text-secondary">Julia</a>.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center w-50 px-3">
+          <div class="corner-border-wrapper d-flex justify-content-center align-items-center">
+            <img src="images/ldpc_decoders.png" class="img-fluid" style="height: 200px; object-fit: contain;">
+          </div>
+        </div>
+      </div>
+      <hr class="hr-middle"/>
+      <p class="ms-2">Outside of work:</p>
+      <p class="ms-2">I’m a regularly active individual who works out daily and loves to play a lot of sports - it’s a great way to unwind and helps me stay sharp and build resilience both physically and mentally.  What if I told you I have played field hockey, badminton, and table tennis competitively? However, more recently, I’ve been enjoying playing basketball in the evenings at the gym.
+      </p>
+      <p class="ms-2">
+      In addition, I have a lifelong passion for music. Music has always been a creative outlet for me, offering both a meditative focus and a powerful way to express emotion and rhythm. I have dedicated over six years to earning a diploma in <a href="https://en.wikipedia.org/wiki/Hindustani_classical_music" class="text-secondary">Hindustani music</a> and can play several instruments- piano/keyboard, guitar, sitar, tabla, and drums are a notable few.</p>
+      
     </div>
-    <div class="col-sm-9 ms-5" id="about">
-      <h2>About Me</h2>
-      <p>Hi! I’m a Ph.D. student in computer science at the University of Massachusetts Amherst. My research is focussed on the engineering and decarbonization of cloud and AI systems. Prior to this, I completed my Masters at UMass Amherst, with a thesis on LDPC Decoders for Quantum Error correction. I also have 2 years of experience working in the industry as a full-stack software engineer at Deskera, where I worked on the development of distributed and parallel microservices (Java Spring) + ReactJS UIs for business data flow across multiple e-commerce platforms. I am also a holder of a bachelor's degree from the Indian Institute of Technology Madras (IITM).</p>
-      <!-- <p>In the interest of broadening my skillset, during my master’s, I have taken advanced courses in Machine Learning, Quantum information systems, software engineering, distributed and operating systems and in blockchain systems. Over the summer, I’ve been working on developing software libraries for decoding Quantum LDPC codes in Julia and implementing the ideas from my coursework.</p> -->
-
-      <h2 class="mt-5" id="projects">Projects</h2><hr>
-
-      <!-- Deskera -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5>LDPC Decoders for Quantum Error Correcting Codes</h5>
-        </div>
-        <em>Jun '23 - May '24</em>
-      </div>
-      <p>Developed and deployed a software library of simple iterative bit-flip and belief propagation decoding algorithms in Julia <br> 
-        Implemented Ordered Statistics Decoding processing that improved logical error rate by 20% for LDPC qubit codes</p>
-      
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5>Stock Trading System</h5>
-        </div>
-        <em>Feb '23 - May '23</em>
-      </div>
-      <p>Developed a 3-tier stock trading server using Python that handles requests from various clients using a thread-pool mode with replication and consistency accross failures. Also Implemented Least Recently Used caching for improving latency of requests.</p>
-
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5>Stock Recommendation System</h5>
-        </div>
-        <em>Feb '23 - Feb '23</em>
-      </div>
-      <p>Developed a stock recommendation system using Python which analyzes historical data using PySpark and PyTorch <br>
-        Implemented LSTM, Random Forest, and Factorization Machine models from SparkMLLib to predict stock closing prices</p>
-
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5>Elevation-based Navigation System (EleNa)</h5>
-        </div>
-        <em>Oct '22 - Dec '22</em>
-      </div>
-      <p>Built a navigation app using JavaScript and React to suggest the shortest path between two user-defined locations <br>
-        Implemented Dijkstra’s, A*, and BFS algorithms with elevation gain and achieved the best performance with the first two</p>
-
-
-      <h2 class="mt-5" id="experience">Industry Experience</h2><hr>
-      <!-- Deskera -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <img src="images/deskera.jpeg" alt="Deskera" class="company-icon" /> 
-          <div class="d-flex ms-2">
-            <h5>Deskera</h5>
-            <p class="ms-1"> - Software Development Engineer (Full-stack)</p>
-          </div>
-        </div>
-        <em>Dec '20 - Jul '22</em>
-      </div>
-      
-      <!-- Publicis Sapient -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <img src="images/publicis-sapient.png" alt="Publicis Sapient" class="company-icon" /> 
-          <div class="d-flex ms-2">
-            <h5>Publicis Sapient</h5>
-            <p class="ms-1">- Software Engineer Intern (Full-stack)</p>
-          </div>
-        </div>
-        <em>May '19 - Jul '19</em>
-      </div>
-
-      <!-- Boeing -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <img src="images/boeing.png" alt="Boeing" class="company-icon" /> 
-          <div class="d-flex ms-2">
-            <h5>Boeing</h5>
-            <p class="ms-1">- Software Research Intern (MATLAB)</p>
-          </div>
-        </div>
-        <em>Jun '18 - Jul '18</em>
-      </div>
-      
-      <h2 class="mt-5" id="education">Education</h2><hr>
-      <!-- UMass Ph.D. -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <img src="images/umass.png" alt="UMass Amherst" class="company-icon" /> 
-          <div class="d-flex ms-2">
-            <h5>UMass Amherst</h5>
-            <p class="ms-1">- Doctor of Philosophy (PhD) in Computer Science (GPA: 4.0)</p>
-          </div>
-        </div>
-        <em>Jul '24 - Present</em>
-      </div>
-
-      <!-- UMass MS -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <img src="images/umass.png" alt="UMass Amherst" class="company-icon" /> 
-          <div class="d-flex ms-2">
-            <h5>UMass Amherst</h5>
-            <p class="ms-1">- Master of Science (MS) in Computer Science (GPA: 3.97)</p>
-          </div>
-        </div>
-        <em>Sep '22 - May '24</em>
-      </div>
-
-      <!-- IITM -->
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">
-          <img src="images/iitm.png" alt="IIT Madras" class="company-icon" /> 
-          <div class="d-flex ms-2">
-            <h5>IIT Madras</h5>
-            <p class="ms-1">- Bachelor of Technology (GPA: 8.75 / 10.0)</p>
-          </div>
-        </div>
-        <em>Aug '16 - Dec '20</em>
-      </div>
-
-      <h2 class="mt-5" id="academic">Teaching Experience</h2><hr>
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5 class="pe-1">Teaching Assistant </h5> - CS 230: Computer System Principles
-        </div>
-        <em>Sep '24 - Dec '24</em>
-      </div>
-
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5 class="pe-1">Grading Assistant </h5> - CS 677: Distributed and Operating Systems
-        </div>
-        <em>Feb '24 - May '24</em>
-      </div>
-      
-      <div class="d-flex justify-content-between">
-        <div class="d-flex">    
-          <h5 class="pe-1">Teaching Assistant</h5>- MM 2061: Phase Transformations
-        </div>
-        <em>Jan '20 - May '20</em>
-      </div>
-      <!-- <p>Developed a 3-tier stock trading server using Python that handles requests from various clients using a thread-pool mode with replication and consistency accross failures. Also Implemented Least Recently Used caching for improving latency of requests.</p> -->
-
-
-
-      <!-- <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
-    </div>
-    <!-- <div class="col-sm-2 pr-2"></div> -->
   </div>
 </div>
 
 <div class="mt-5 p-1 bg-dark text-white text-center">
-  <p>© 2024 Krishna Praneet Gudipaty. Thanks for visiting! Back to <a href="#" class="text-secondary">top</a>.</p>
+  <p>© <span id="currentYear"></span> Krishna Praneet Gudipaty. (hint: did you click on everything?)</p>
 </div>
-
 </body>
 </html>
