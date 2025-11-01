@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Krishna's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- <div class="p-5 bg-primary text-white text-center">
+  <h1>My First Bootstrap 5 Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div> -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link active button trans" href="index.html">About</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link button trans" href="bio.html">Bio</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link button trans" href="eduexp.html">Education/Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button trans" href="research.html">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button trans" href="files/2025-09_KrishnaPraneet_Gudipaty_CV.pdf" target="_blank">Resume/CV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button trans" href="quant.html">Quant</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link button trans btn" onclick="toggleDarkMode()"><img class="pb-1" src="images/dark-mode.svg"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="main-content">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-10 mx-auto" id="bio">      
+
+
+        <!--------------------------- Education -------------------------------->
+        <h2 class="caveat-font mt-4" id="education">Education</h2><hr class="hr-left"/>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <!-- <img src="images/umass.png" alt="UMass Amherst" class="company-icon" />  -->
+            <div class="d-flex ms-2">
+              <p class="ms-1">Ph.D. (expected 2027), M.S. (2024), <a href="https://www.cics.umass.edu/" class="text-secondary ms-1">Computer Sciences</a>, </p>
+              <p><a href="https://www.umass.edu/" class="text-secondary ms-1">University of Massachusetts Amherst</a> (GPA: 4.0)</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <!-- <img src="images/iitm.png" alt="IIT Madras" class="company-icon" />  -->
+            <div class="d-flex ms-2">
+              <p class="ms-1">B.Tech. (2020), </p>
+              <p><a href="https://www.iitm.ac.in/" class="text-secondary ms-1">Indian Institute of Technology Madras</a> (GPA: 8.75 / 10.0)</p>
+              
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------- Experience -------------------------------->
+        <h2 class="caveat-font mt-4" id="experience">Industry</h2><hr class="hr-left"/>
+        <!-- CQN -->
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <div class="d-flex ms-2 flex-column align-items-start">
+              <em class="fw-bold">Center for Quantum Networks (CQN)</em>
+              <em class="fw-bold">API Endpoint Developer</em>
+            </div>
+          </div>
+          <em>Jan '24 - May '24</em>
+        </div>
+        <p class="ms-2 mt-2">Designed a REST API server utilizing Oxygen.jl framework to enable programmatic access to a quantum network simulator. Integrated HTTP endpoints for manipulating qubit registers and gates across nodes in the network using QuantumSavory.jl to enable reproducible research in quantum coding theory.</p>
+        <!-- Deskera -->
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <!-- <img src="images/deskera.jpeg" alt="Deskera" class="company-icon" />  -->
+            <div class="d-flex ms-2 flex-column align-items-start">
+              <em class="fw-bold">Deskera</em>
+              <em class="fw-bold">Software Development Engineer (Full-stack)</em>
+            </div>
+          </div>
+          <em>Dec '20 - Jul '22</em>
+        </div>
+        <p class="ms-2 mt-2">Launched a Java mircroservices platform to reduce manual business management efforts by 40% through streamlining logistics across e-commerce portals and Point-of-Sales (POS) devices. Developed real-time CDC pipelines and webhooks to automate data reconciliation using Debezium and Kafka queues, reducing data propagation latency from ∼60 minutes to &lt;5 seconds. Designed UI dashboards in React to provide users with no-code business intelligence, key metrics tracking, and integrating inventory synchronization.</p>
+        
+        <!-- Publicis Sapient -->
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <!-- <img src="images/deskera.jpeg" alt="Deskera" class="company-icon" />  -->
+              <div class="d-flex ms-2 flex-column align-items-start">
+                <em class="fw-bold">Publicis Sapient</em>
+                <em class="fw-bold">Software Development Intern (Full-stack)</em>
+              </div>
+          </div>
+          <em>May '19 - Jul '19</em>
+        </div>
+        <p class="ms-2 mt-2">Refactored and delivered trading platform for short-term maturity instruments with RESTful microservices architecture using Java, improving order book latency by 25% and reducing server utilization by 30%. Revamped UI to a Single Page Architecture (SPA) with React and Bootstrap for real-time asset transactions and portfolio management, resulting in better page-to-page navigation and loading times by ∼20% on average.</p>
+        
+
+        <!-- Boeing -->
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <!-- <img src="images/deskera.jpeg" alt="Deskera" class="company-icon" />  -->
+            <div class="d-flex ms-2 flex-column align-items-start">
+              <em class="fw-bold">Boeing</em>
+              <em class="fw-bold">Software Research Intern (MATLAB)</em>
+            </div>
+          </div>
+          <em>Jun '18 - Jul '18</em>
+        </div>
+        <p class="ms-2 mt-2">Developed Image Processing Algorithms to identify the volume of shrinkage defects with a mean accuracy of 95% in the torque arm of aircraft landing gear for Non-Destructive Evaluation. Analyzed raw DICOM images using a combination of mean and Canny Gaussian filter using DFT and documented an approach for defect segmentation by BPHF and difference of gaussians, followed by a routine of image dilation and erosion</p>
+
+
+       
+
+        <h2 class="caveat-font mt-4" id="academic">Academia</h2><hr class="hr-left"/>
+        <p class="ms-2">UMass Amherst</p>
+        <ul>
+          <li><em class="fw-bold">Fall 2025:</em> Digital Forensics (CS 365) - TA</li>
+          <li><em class="fw-bold">Spring 2025:</em> Distributed and Operating Systems (CS 677) - TA</li>
+          <li><em class="fw-bold">Fall 2024:</em> Computer System Principles (CS 230) - TA</li>
+          <li><em class="fw-bold">Spring 2024:</em> Distributed and Operating Systems (CS 677) - GA</li>
+        </ul>
+
+        <p class="ms-2">IITM</p>
+        <ul>
+          <li><em class="fw-bold">Spring 2020:</em> Phase Transformations (MM 2061) - TA</li>
+        </ul>
+
+        
+    
+
+      </div>
+      <!-- <div class="col-sm-2 pr-2"></div> -->
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-1 bg-dark text-white text-center">
+  <p>© <span id="currentYear"></span> Krishna Praneet Gudipaty.</p>
+</div>
+</body>
+</html>
