@@ -187,3 +187,8 @@ body {
 .fw-bold {
   font-weight: 500 !important;
 }
+
+/* Hide Quant nav link from navbar on all pages */
+nav li:has(a[href="quant.html"]) {
+  display: none;
+}
