@@ -1,0 +1,24 @@
+title: Krishna Praneet Gudipaty
+url: "https://ankitsultana.com"
+baseurl: ""
+
+markdown: kramdown
+#ins_logo: "./bits-logo.png"
+
+tracking_id: #
+
+footer: yes
+footer_url: "https://www.gnu.org/licenses/gpl-3.0.en.html"
+footer_text: "Website modified by Krishna Praneet Gudipaty (click for source)"
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+nav:
+ - name: "About"
+   link: "/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
