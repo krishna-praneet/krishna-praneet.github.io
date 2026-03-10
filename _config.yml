@@ -1,4 +1,4 @@
-title: Krishna Praneet Gudipaty
+title: Krishna Gudipaty
 url: "https://ankitsultana.com"
 baseurl: ""
 
@@ -8,8 +8,8 @@ markdown: kramdown
 tracking_id: #
 
 footer: yes
-footer_url: "https://www.gnu.org/licenses/gpl-3.0.en.html"
-footer_text: "Website modified by Krishna Praneet Gudipaty (click for source)"
+footer_url: "https://github.com/krishna-praneet/krishna-praneet.github.io/tree/gh-pages"
+footer_text: "Website ideation by: Krishna Gudipaty, and modifications by: Claude (click for source)"
 
 sass:
     style: compressed
@@ -20,5 +20,7 @@ nav:
    link: "/"
  - name: "Resume"
    link: "resume.pdf"
+ - name: "Academia"
+   link: "academia"
  - name: "Contact"
    link: "contact"
