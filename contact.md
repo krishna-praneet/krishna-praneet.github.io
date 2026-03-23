@@ -4,6 +4,7 @@ is_contact: true
 ---
 
 * Email: [kgudipaty@umass.edu](mailto:kgudipaty@umass.edu)
+* [Schedule a meeting](https://calendly.com/kgudipaty-umass/30min)
 
 ---
 
