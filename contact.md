@@ -8,13 +8,9 @@ is_contact: true
 
 ---
 
-## Mailing Address
+## Office
 
-> LGRC A331, 740 N Pleasant St
->
-> Amherst, MA 01003
->
-> United States
+LGRC A331, 740 N Pleasant St, Amherst, MA 01003
 
 ---
 

@@ -9,24 +9,24 @@ layout: default
     <a href="https://www.linkedin.com/in/krishna-praneet/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/krishna-praneet" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://scholar.google.com/citations?user=iWacs9AAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+    <a href="https://leetcode.com/u/kpgudipaty/" title="LeetCode" target="_blank"><i class="fa fa-code"></i></a>
   </div>
   <div class="profile-preferred">Preferred: Krishna (he/him)</div>
   <div class="profile-pronunciation">pronounced: /ˈkrɪʃ.nə/ (krish-nuh)</div>
   <div class="profile-email">kgudipaty [at] umass [dot] edu</div>
 </div>
 
-## About Me
+## About
 
-Hi! Thanks for making your way here. I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amherst](https://www.cics.umass.edu/), under the guidance of [Dr. Prashant Shenoy](https://people.cs.umass.edu/~shenoy/). As part of the [Laboratory for Advanced System Software (LASS)](https://lass.cs.umass.edu/), I am currently working on the design of failure-aware model serving system for Foundation Models. More broadly, my research interests include Machine Learning and Artifical Intelligence, Distributed Inference and training, fault-tolerance and resource management on the Edge/IoT. I also hold a Masters degree in from UMass Amherst, with a masters project on Quantum Error Correcting Codes and qLDPC decoders.
+I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amherst](https://www.cics.umass.edu/), under the guidance of [Prof. Prashant Shenoy](https://people.cs.umass.edu/~shenoy/). As part of the [Laboratory for Advanced System Software (LASS)](https://lass.cs.umass.edu/), I am currently working on the design of failure-aware model serving system for Foundation Models. More broadly, my research interests include Machine Learning and Artifical Intelligence, Distributed Inference and training, fault-tolerance and resource management on the Edge/IoT. 
 
-Prior to this, I worked full-time for 2+ years as a Software Engineer at Deskera, where I developed full-stack microservices and data-pipelines for e-commerce data. I earned my Bachelors degree from the Indian Institute of Technology Madras in 2020. 
+Prior to this, I have a 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Bachelors degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
 
 ## News
 
-*Looking for internships for Summer 2026! Please reach out if I could be a fit.*
-
  |
 -----|------
+**May 2026** | Artifact Evaluator for OSDI 2026, Reviewer for *<ML Conference>*
 **Mar 2026** | Artifact Evaluator for MLSys 2026 
 **Jan 2026** | Reviewer for AISTATS 2026 
 **Oct 2025** | Presented our work on Edge ML resilience at IEEE Milcom 2025, Los Angeles 
