@@ -1,0 +1,48 @@
+projects:
+  - title: "LDPC Decoders for Quantum Error Correcting Codes"
+    period: "Jun '23 - May '24"
+    description: "Developed and deployed a software library of simple iterative bit-flip and belief propagation decoding algorithms in Julia. Implemented Ordered Statistics Decoding processing that improved logical error rate by 20% for LDPC qubit codes"
+  
+  - title: "Stock Trading System"
+    period: "Feb '23 - May '23"
+    description: "Developed a 3-tier stock trading server using Python that handles requests from various clients using a thread-pool mode with replication and consistency accross failures. Also Implemented Least Recently Used caching for improving latency of requests."
+  
+  - title: "Stock Recommendation System"
+    period: "Feb '23 - Feb '23"
+    description: "Developed a stock recommendation system using Python which analyzes historical data using PySpark and PyTorch. Implemented LSTM, Random Forest, and Factorization Machine models from SparkMLLib to predict stock closing prices"
+  
+  - title: "Elevation-based Navigation System (EleNa)"
+    period: "Oct '22 - Dec '22"
+    description: "Built a navigation app using JavaScript and React to suggest the shortest path between two user-defined locations. Implemented Dijkstra's, A*, and BFS algorithms with elevation gain and achieved the best performance with the first two"
+
+experience:
+  - company: "Deskera"
+    logo: "images/deskera.jpeg"
+    position: "Software Development Engineer (Full-stack)"
+    period: "Dec '20 - Jul '22"
+  
+  - company: "Publicis Sapient"
+    logo: "images/publicis-sapient.png"
+    position: "Software Engineer Intern (Full-stack)"
+    period: "May '19 - Jul '19"
+  
+  - company: "Boeing"
+    logo: "images/boeing.png"
+    position: "Software Research Intern (MATLAB)"
+    period: "Jun '18 - Jul '18"
+
+education:
+  - institution: "UMass Amherst"
+    logo: "images/umass.png"
+    degree: "Doctor of Philosophy (PhD) in Computer Science (GPA: 4.0)"
+    period: "Jul '24 - Present"
+  
+  - institution: "UMass Amherst"
+    logo: "images/umass.png"
+    degree: "Master of Science (MS) in Computer Science (GPA: 3.97)"
+    period: "Sep '22 - May '24"
+  
+  - institution: "IIT Madras"
+    logo: "images/iitm.png"
+    degree: "Bachelor of Technology (GPA: 8.75 / 10.0)"
+    period: "Aug '16 - Dec '20" 
