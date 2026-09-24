@@ -27,3 +27,21 @@ table tr td {
     margin: 0;
     padding: 4px 13px 4px 0;
 }
+
+/* News list: show the latest items, scroll for older ones */
+.news-scroll {
+    max-height: 210px;
+    overflow-y: auto;
+    margin: 15px 0;
+    padding-right: 8px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    table {
+        margin: 0;
+    }
+    td:first-child {
+        white-space: nowrap;
+        vertical-align: top;
+    }
+}

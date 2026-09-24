@@ -22,11 +22,18 @@ I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amh
 
 Prior to this, I have a 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Bachelors degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
 
+**I'm actively looking for research internships for Summer 2027 — feel free to [reach out](/contact)!**
+
 ## News
+
+<div class="news-scroll" markdown="1">
 
  |
 -----|------
-**May 2026** | Artifact Evaluator for OSDI 2026, Reviewer for *<ML Conference>*
+**Sep 2026** | Awarded Student Travel Grant to attend ACM/IEEE SEC 2026
+**Sep 2026** | [Foundation Models for the Edge: Opportunities and Trade-offs](https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing) accepted to IEEE MILCOM 2026
+**Aug 2026** | [HYDRA: Multi-Level Ensemble Learning for Failure-Resilient Edge Inference](https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf) accepted to ACM/IEEE SEC 2026
+**May 2026** | Artifact Evaluator for OSDI 2026, Reviewer for NeurIPS 2026
 **Mar 2026** | Artifact Evaluator for MLSys 2026 
 **Jan 2026** | Reviewer for AISTATS 2026 
 **Oct 2025** | Presented our work on Edge ML resilience at IEEE Milcom 2025, Los Angeles 
@@ -34,6 +41,8 @@ Prior to this, I have a 2.5+ years of experience as a Software Engineer at multi
 **Jun 2025** | Multi-level ensemble Learning (MEL) is available on [arXiv](https://arxiv.org/abs/2506.20094) 
 **Jul 2024** | Started my phd at UMass Amherst under Dr. Prashant Shenoy!
 **May 2024** | Received my Masters degree from UMass Amherst!
+
+</div>
 
 <!-- ## Research Interest
 
