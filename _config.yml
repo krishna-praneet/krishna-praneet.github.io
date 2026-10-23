@@ -1,4 +1,4 @@
-title: Krishna Gudipaty
+title: Krishna P. Gudipaty
 url: "https://krishna-praneet.github.io"
 baseurl: ""
 
@@ -18,13 +18,13 @@ sass:
 nav:
  - name: "About"
    link: "/"
- - name: "Resume"
-   link: "/resume.pdf"
- - name: "Academia"
-   link: "/academia"
+ - name: "Research"
+   link: "/research"
+ - name: "Service"
+   link: "/service"
+ - name: "Mentoring"
+   link: "/mentoring"
  - name: "Contact"
    link: "/contact"
  # - name: "Hobbies"
  #   link: "/hobbies"
- - name: "Mystery"
-   link: "/mysterygame"

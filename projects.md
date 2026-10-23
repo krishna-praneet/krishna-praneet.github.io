@@ -32,6 +32,7 @@ Demonstrated practical considerations for AI model serving across enterprise edg
 Introduced a novel ML training and architectural framework using a modified multi-objective loss for enhancing fault tolerance in resource-constrained edge AI environments. Preserved up to **95.6%** accuracy using ensembles sized at **40%** of the original model. Attained **25%** lower inference latency through parallelized execution across edge servers, evaluated across vision, audio, and NLP tasks.
 
 **Topics:** Ensemble Learning, Edge AI, Resource-Constrained Inference
+**Publication:** [ACM/IEEE SEC 2026 (HYDRA)](https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf)
 **Preprint:** [arXiv:2506.20094](https://arxiv.org/abs/2506.20094)
 
 ---
@@ -42,6 +43,7 @@ Introduced a novel ML training and architectural framework using a modified mult
 Built the first Julia-native low-density parity-check (LDPC) decoders library with **500+ downloads** on JuliaHub, including the first available open-source SOTA iterative decoder. Achieved **30%** improvement in decoding latency compared to existing baselines like python-ldpc, through optimized memory allocations and variable type profiling, and a user-friendly API for benchmarking qLDPC codes with just <10 lines of code.
 
 **Topics:** Quantum Computing, Error Correction, qLDPC Codes, Julia
+**Code:** [QuantumSavory/LDPCDecoders.jl](https://github.com/QuantumSavory/LDPCDecoders.jl)
 **Presented at:** APS March Meeting 2024
 
 ---

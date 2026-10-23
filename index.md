@@ -9,6 +9,7 @@ layout: default
     <a href="https://www.linkedin.com/in/krishna-praneet/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
     <a href="https://github.com/krishna-praneet" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://scholar.google.com/citations?user=iWacs9AAAAAJ&hl=en" title="Google Scholar" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+    <a href="/research#cv" title="CV"><i class="fa fa-file-lines"></i></a>
     <a href="https://leetcode.com/u/kpgudipaty/" title="LeetCode" target="_blank"><i class="fa fa-code"></i></a>
   </div>
   <div class="profile-preferred">Preferred: Krishna (he/him)</div>
@@ -20,7 +21,7 @@ layout: default
 
 I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amherst](https://www.cics.umass.edu/), under the guidance of [Prof. Prashant Shenoy](https://people.cs.umass.edu/~shenoy/). As part of the [Laboratory for Advanced System Software (LASS)](https://lass.cs.umass.edu/), I am currently working on the design of failure-aware model serving system for Foundation Models. More broadly, my research interests include Machine Learning and Artifical Intelligence, Distributed Inference and training, fault-tolerance and resource management on the Edge/IoT. 
 
-Prior to this, I have a 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Bachelors degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
+Prior to this, I have a 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Masters degree in Computer Science from UMass Amherst in 2024, and my Bachelors degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
 
 **I'm actively looking for research internships for Summer 2027 — feel free to [reach out](/contact)!**
 
@@ -30,6 +31,8 @@ Prior to this, I have a 2.5+ years of experience as a Software Engineer at multi
 
  |
 -----|------
+**Oct 2026** | Presented HYDRA at ACM/IEEE Symposium on Edge Computing (SEC) 2026
+**Oct 2026** | Presented Foundation Models for the Edge at IEEE MILCOM 2026
 **Sep 2026** | Awarded Student Travel Grant to attend ACM/IEEE SEC 2026
 **Sep 2026** | [Foundation Models for the Edge: Opportunities and Trade-offs](https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing) accepted to IEEE MILCOM 2026
 **Aug 2026** | [HYDRA: Multi-Level Ensemble Learning for Failure-Resilient Edge Inference](https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf) accepted to ACM/IEEE SEC 2026
@@ -47,14 +50,6 @@ Prior to this, I have a 2.5+ years of experience as a Software Engineer at multi
 <!-- ## Research Interest
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam finibus ipsum ac erat aliquam dapibus. Vestibulum vehicula placerat ex, a consectetur odio pharetra quis. Mauris id urna ante. Fusce pharetra diam ac nisi aliquet, vel egestas ex iaculis. Pellentesque laoreet cursus tellus sed pellentesque. Praesent a rhoncus elit. Nunc ipsum nisl, consequat sit amet pretium quis, gravida id ipsum. -->
-
-## Publications
-
-1. **Gudipaty, Krishna Praneet**, W. A. Hanafy, L. Wu, et al., "Practical considerations for failure resilient ml systems at the edge," in *MILCOM 2025 - 2025 IEEE Military Communications Conference (MILCOM)*
-
-2. **Gudipaty, Krishna Praneet**, W. A. Hanafy, K. Ozkara, et al., "Mel: Multi-level ensemble learning for resource-constrained environments," *arXiv preprint arXiv:2506.20094*, 2025
-
-3. A. Micciche, **Gudipaty, Krishna Praneet**, and S. Krastanov, "Quantum ldpc error correcting codes for use on 1d quantum dot arrays," in *APS March Meeting Abstracts*, vol. 2024, S46–010
 
 <!-- ## Typography
 
