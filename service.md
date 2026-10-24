@@ -5,11 +5,11 @@ title: Service
 
 ## Reviewing
 
-- International Conference on Artificial Intelligence and Statistics (AISTATS) 2027, Reviewer
-- Neural Information Processing Systems (NeurIPS) 2026, Reviewer
-- USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2026, Artifact Evaluator
-- Conference on Machine Learning and Systems (MLSys) 2026, Artifact Evaluator
-- International Conference on Artificial Intelligence and Statistics (AISTATS) 2026, Reviewer
+- Reviewer, International Conference on Artificial Intelligence and Statistics (AISTATS) 2027
+- Reviewer, Neural Information Processing Systems (NeurIPS) 2026
+- Artifact Evaluator, USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2026
+- Artifact Evaluator, Conference on Machine Learning and Systems (MLSys) 2026
+- Reviewer, International Conference on Artificial Intelligence and Statistics (AISTATS) 2026
 
 ---
 

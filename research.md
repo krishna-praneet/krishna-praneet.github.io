@@ -5,9 +5,9 @@ title: Research
 
 ## Research Summary
 
-My research focuses on the challenges of operating ML/AI models under limited memory, compute, and network resources in edge and IoT environments. More specifically, I develop systems and techniques for fault-tolerant model serving, resource-aware model placement and scheduling, and efficient adaptation and serving of foundation and multimodal models. Much of my research asks how model design and systems design can be considered jointly rather than independently, particularly when failures, resource constraints, and changing workloads are first-class concerns.
+I'm excited about tackling systems challenges in ML/AI lifecycles, advancing techniques in scheduling, placement, and failure resiliency. Specifically, I have worked on post-training and inference of Foundation Models, adaptive failover systems, and edge computing & IoT.
 
-**CV:** [Download (PDF)](/resume.pdf){:target="_blank"}
+**Please find my CV here:** [Download (PDF)](/resume.pdf){:target="_blank"}
 {: #cv}
 
 ---
