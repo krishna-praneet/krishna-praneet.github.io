@@ -22,7 +22,7 @@
     <!-- Facebook Open Graph -->
     <meta name="og:description" content="">
     <meta name="og:title" content="Krishna P. Gudipaty">
-    <meta name="og:url" content="http://localhost:4000/research.html">
+    <meta name="og:url" content="https://krishna-praneet.github.io/research.html">
     <meta name="og:type" content="article">
     
     
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Krishna P. Gudipaty">
     <meta name="twitter:description" content="">
-    <meta name="twitter:url" content="http://localhost:4000/research.html">
+    <meta name="twitter:url" content="https://krishna-praneet.github.io/research.html">
     
         <meta name="twitter:image" content="">
     
@@ -39,7 +39,7 @@
     <div class="wrapper">
         <div class="navbar container">
             
-            <a id="author-name" class="alignable pull-left" href="http://localhost:4000"><img class="author-logo" src="/assets/umass_logo.jpeg" alt="UMass Amherst logo">Krishna P. Gudipaty</a>
+            <a id="author-name" class="alignable pull-left" href="https://krishna-praneet.github.io"><img class="author-logo" src="/assets/umass_logo.jpeg" alt="UMass Amherst logo">Krishna P. Gudipaty</a>
             <ul id="navlist" class="alignable pull-right navbar-ul">
                 
                     
@@ -91,31 +91,55 @@
 
 <p>I’m excited about tackling systems challenges in ML/AI lifecycles, advancing techniques in scheduling, placement, and failure resiliency. Specifically, I have worked on post-training and inference of Foundation Models, adaptive failover systems, and edge computing &amp; IoT.</p>
 
-<p id="cv"><strong>Please find my CV here:</strong> <a href="/resume.pdf" target="_blank">Download (PDF)</a></p>
+<p id="cv"><em>Please find my CV here:</em> <a href="/resume.pdf" target="_blank">Download (PDF)</a></p>
 
 <hr />
 
-<h2 id="publications">Publications</h2>
+<h2 id="foundation-models">Foundation Models</h2>
 
-<ol>
-  <li>
-    <p><strong>Gudipaty, Krishna Praneet</strong>, W. A. Hanafy, N. Ng, et al., “<a href="https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf">HYDRA: Multi-level ensemble learning for failure-resilient edge inference</a>,” in <em>ACM/IEEE Symposium on Edge Computing (SEC)</em>, 2026</p>
-  </li>
-  <li>
-    <p><strong>Gudipaty, Krishna Praneet</strong>, W. A. Hanafy, T. Abdelzaher, et al., “<a href="https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing">Foundation models for the edge: Opportunities and trade-offs</a>,” in <em>IEEE MILCOM Internet of Things for Adversarial Environments (IoTAE) Workshop</em>, 2026</p>
-  </li>
-  <li>
-    <p><strong>Gudipaty, Krishna Praneet</strong>, W. A. Hanafy, L. Wu, et al., “<a href="https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf">Practical considerations for failure resilient ml systems at the edge</a>,” in <em>IEEE MILCOM Internet of Things for Adversarial Environments (IoTAE) Workshop</em>, 2025</p>
-  </li>
-  <li>
-    <p><strong>Gudipaty, Krishna Praneet</strong>, W. A. Hanafy, K. Ozkara, et al., “Mel: Multi-level ensemble learning for resource-constrained environments,” <em>arXiv preprint arXiv:2506.20094</em>, 2025</p>
-  </li>
-  <li>
-    <p>A. Micciche, <strong>Gudipaty, Krishna Praneet</strong>, and S. Krastanov, “Quantum ldpc error correcting codes for use on 1d quantum dot arrays,” in <em>APS March Meeting Abstracts</em>, vol. 2024, S46–010</p>
-  </li>
-</ol>
+<p>Foundation models are general-purpose, but adapting and deploying them is expensive, especially outside the datacenter. My current work looks at how to make the full lifecycle of these models, from post-training to serving, efficient and dependable across cloud and edge hardware.</p>
 
-                <hr />
+<h3 id="post-training-benchmarks-and-efficiency">Post-training Benchmarks and Efficiency</h3>
+
+<p>Choosing how to adapt and deploy a foundation model involves trade-offs that are rarely measured side by side. I study these costs systematically: how post-training methods, from full fine-tuning and parameter-efficient methods to preference optimization, compare in data, compute and accuracy, and how serving choices such as batching and quantization play out across models, hardware and runtimes. Our study of <a href="https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing">foundation models for the edge</a> (MILCOM 2026) showed when general-purpose models can replace task-specific ones at a fraction of the adaptation cost, and we are extending it into a broader benchmarking suite.</p>
+
+<h3 id="inference-time-adaptation">Inference-time Adaptation</h3>
+
+<p>Deployed models face changing conditions: failures, shifting resources and new latency targets. Rather than retraining or keeping full replicas, I explore treating models as compositions of reusable components that can be reassembled at runtime. This includes stitching model structures together to build lightweight backups for adaptive failover, and reusing LLM representations to build hybrid models that meet latency targets on constrained devices.</p>
+
+<h2 id="failure-resiliency-for-model-serving">Failure Resiliency for Model Serving</h2>
+
+<p>Edge devices fail more often than cloud servers, and conventional fault tolerance, such as cloud failover, full replicas or compressed backups, costs latency, accuracy or resources that edge deployments cannot spare. I began by measuring these overheads in real ML pipelines (<a href="https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf">MILCOM 2025</a>), and then designed <a href="https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf">HYDRA</a> (SEC 2026), which turns spare capacity across edge nodes into a collective backup: an ensemble of small models that matches a larger model and degrades gracefully as nodes fail.</p>
+
+<p><img src="/assets/hydra.png" alt="HYDRA: two model instances whose representations are combined by a lightweight aggregator for higher combined performance" class="figure" /></p>
+
+<h2 id="quantum-computing">Quantum Computing</h2>
+
+<p>During my Masters, I worked on software for quantum error correction and networking. I built <a href="https://github.com/QuantumSavory/LDPCDecoders.jl">LDPCDecoders.jl</a>, an open-source Julia library of fast decoders for quantum LDPC codes in the QuantumSavory ecosystem, and an API layer that gives programmatic access to a distributed quantum network simulator for reproducible research.</p>
+
+<h2 id="computation-in-materials-science">Computation in Materials Science</h2>
+
+<p>My background before computer science was in metallurgy and materials science, where I first applied computing to physical problems: using machine learning to accelerate ab-initio molecular dynamics simulations of platinum nanoclusters for my undergraduate thesis at IIT Madras, and building image-processing pipelines to detect defects in aircraft components at Boeing.</p>
+
+<!--
+---
+
+## Publications
+
+1. **Gudipaty, Krishna Praneet**, W. A. Hanafy, N. Ng, et al., "[HYDRA: Multi-level ensemble learning for failure-resilient edge inference](https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf)," in *ACM/IEEE Symposium on Edge Computing (SEC)*, 2026
+
+2. **Gudipaty, Krishna Praneet**, W. A. Hanafy, T. Abdelzaher, et al., "[Foundation models for the edge: Opportunities and trade-offs](https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing)," in *IEEE MILCOM Internet of Things for Adversarial Environments (IoTAE) Workshop*, 2026
+
+3. **Gudipaty, Krishna Praneet**, W. A. Hanafy, L. Wu, et al., "[Practical considerations for failure resilient ml systems at the edge](https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf)," in *IEEE MILCOM Internet of Things for Adversarial Environments (IoTAE) Workshop*, 2025
+
+4. **Gudipaty, Krishna Praneet**, W. A. Hanafy, K. Ozkara, et al., "Mel: Multi-level ensemble learning for resource-constrained environments," *arXiv preprint arXiv:2506.20094*, 2025
+
+5. A. Micciche, **Gudipaty, Krishna Praneet**, and S. Krastanov, "Quantum ldpc error correcting codes for use on 1d quantum dot arrays," in *APS March Meeting Abstracts*, vol. 2024, S46–010
+-->
+
+            </div>
+        <hr>
+        <div class="container footer">
                 <p style="text-align: center; margin-bottom: 10px">
                     <small>Website source: <a href="https://github.com/krishna-praneet/krishna-praneet.github.io" target="_blank">link</a>, under <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License v3</a></small>
                 </p>

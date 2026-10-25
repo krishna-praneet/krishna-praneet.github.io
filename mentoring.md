@@ -3,35 +3,32 @@ layout: default
 title: Mentoring
 ---
 
-## UMass Summer Turing Program (Summer 2026)
+## UMass Summer Turing Program <span class="date">Summer 2026</span>
 
-*Project Mentor & Guest Instructor*
+I gave a lecture on *Introduction to Machine Learning and Neural Networks* to high school students, and guided a team of three through a computer science project.
 
-### Project: Professor Cheeseball's Escape
+My wonderful team built *Professor Cheeseball's Escape*: [Play the game](/mysterygame-play/mysteryproject.html)
 
-Made by my wonderful team at the UMass Turing programme 2026. I didn't do anything, but I get all the credit, you'll see —
-
+<!--
 - Sofia
 - Rama
 - Rodyna
+-->
 
-[Start Game](/mysterygame-play/mysteryproject.html)
+![UMass Summer Turing Program team with their robot maze](/assets/turing_students.jpg){: .photo-small}
 
-*P.S. All the art was hand drawn.*
-
-*P.S. 2 The code for the robot maze is "Cheese", this was done interactively by controlling a mechanum robot through a maze that revealed the code at the end.*
-
----
-
-## Undergraduate Research Volunteers (URV) Program (Summer 2026)
-
-Advised 3 undergraduate research assistants through the CICS Careers URV Program.
+*All the art was hand drawn. The code for the robot maze is "Cheese", this was done interactively by controlling a mechanum robot through a maze that revealed the code at the end.*
 
 ---
 
-## LASS Lab (Fall 2025)
+## Undergraduate Research Volunteers (URV) <span class="date">Summer 2026</span>
 
-- Amar Master — co-mentored
-- Ayomide Olubanwo — co-mentored
-- Dante Eschleman — co-mentored
-- Omar Boukantar — co-mentored
+Advised three undergraduate students through the CICS Careers program, guiding them through the end-to-end research lifecycle.
+
+![URV Program students, Summer 2026](/assets/urv_students.jpg){: .photo-small}
+
+---
+
+## LASS Lab <span class="date">Fall 2025</span>
+
+Co-mentored 4 undergraduate researchers: Amar Master, Ayomide Olubanwo, Dante Eschleman and Omar Boukantar.

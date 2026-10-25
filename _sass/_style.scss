@@ -87,7 +87,22 @@ hr {
     margin: auto;
 }
 .wrapper {
-    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Fill the window so the footer sits at the bottom on short pages */
+.wrapper > .container {
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper > .content {
+    flex: 1 0 auto;
+}
+.wrapper > hr {
+    width: 95%;
+    max-width: $max-width + 60px;
+    margin: 8px auto;
 }
 
 /* Institute Image */

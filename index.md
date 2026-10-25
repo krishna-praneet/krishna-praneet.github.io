@@ -23,7 +23,7 @@ I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amh
 
 Prior to this, I have a 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Masters degree in Computer Science from UMass Amherst in 2024, and my Bachelors degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
 
-**I'm actively looking for research internships for Summer 2027 — feel free to [reach out](/contact)!**
+<!-- **I'm actively looking for research internships for Summer 2027 — feel free to [reach out](/contact)!** -->
 
 ## News
 

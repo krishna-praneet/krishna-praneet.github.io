@@ -112,4 +112,36 @@
         text-align: center;
         width: 100%;
     }
+    .date {
+        font-weight: 400;
+        font-size: 0.85em;
+        color: #888;
+        margin-left: 6px;
+    }
+    h2 .date, h3 .date {
+        font-size: 0.65em;
+        margin-left: 8px;
+    }
+    img.figure {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    @media (max-width: $small-width) {
+        img.figure {
+            width: 100%;
+        }
+    }
+    img.photo-small {
+        width: 45%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    @media (max-width: $small-width) {
+        img.photo-small {
+            width: 100%;
+        }
+    }
 }
