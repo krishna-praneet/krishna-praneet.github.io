@@ -14,30 +14,49 @@ I'm excited about tackling systems challenges in ML/AI lifecycles, advancing tec
 
 ## Foundation Models
 
-Foundation models are general-purpose, but adapting and deploying them is expensive, especially outside the datacenter. My current work looks at how to make the full lifecycle of these models, from post-training to serving, efficient and dependable across cloud and edge hardware.
+Foundation models are general-purpose, but adapting and deploying them is expensive, especially outside the datacenter. This line of work looks at how to make the full lifecycle of these models, from post-training to serving, efficient and dependable across cloud and edge hardware.
 
 ### Post-training Benchmarks and Efficiency
 
-Choosing how to adapt and deploy a foundation model involves trade-offs that are rarely measured side by side. I study these costs systematically: how post-training methods, from full fine-tuning and parameter-efficient methods to preference optimization, compare in data, compute and accuracy, and how serving choices such as batching and quantization play out across models, hardware and runtimes. Our study of [foundation models for the edge](https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing) (MILCOM 2026) showed when general-purpose models can replace task-specific ones at a fraction of the adaptation cost, and we are extending it into a broader benchmarking suite.
+Choosing how to adapt and deploy a foundation model involves trade-offs that are rarely measured side by side. These works study those costs systematically: how post-training methods, from full fine-tuning and parameter-efficient methods to preference optimization, compare in data, compute and accuracy, and how serving choices such as batching and quantization play out across models, hardware and runtimes. A study of foundation models for the edge [1] showed when general-purpose models can replace task-specific ones at a fraction of the adaptation cost, and is being extended into a broader benchmarking suite.
+
+![Spectrum from narrow, application-specific models (low memory, compute and energy) to foundation models with adapters (efficient adaptation, minimal data, faster training), with micro foundation models in between](/assets/fms_edge.png){: .figure}
+
+[1] Gudipaty, K. P. et al. "Foundation Models for the Edge: Opportunities and Trade-offs", IEEE MILCOM, 2026 ([Link](https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing))
+{: .refs}
 
 ### Inference-time Adaptation
 
-Deployed models face changing conditions: failures, shifting resources and new latency targets. Rather than retraining or keeping full replicas, I explore treating models as compositions of reusable components that can be reassembled at runtime. This includes stitching model structures together to build lightweight backups for adaptive failover, and reusing LLM representations to build hybrid models that meet latency targets on constrained devices.
+Deployed models face changing conditions: failures, shifting resources and new latency targets. Rather than retraining or keeping full replicas, these works explore treating models as compositions of reusable components that can be reassembled at runtime. This includes stitching model structures together to build lightweight backups for adaptive failover.
+
+![Adaptive foundation model: a backbone B produces features, a stitching layer S maps them into the feature space of decoder A, which produces labels; S is solved in closed form as a least-squares fit](/assets/structural_resilience.png){: .figure}
+
+---
 
 ## Failure Resiliency for Model Serving
 
-Edge devices fail more often than cloud servers, and conventional fault tolerance, such as cloud failover, full replicas or compressed backups, costs latency, accuracy or resources that edge deployments cannot spare. I began by measuring these overheads in real ML pipelines ([MILCOM 2025](https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf)), and then designed [HYDRA](https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf) (SEC 2026), which turns spare capacity across edge nodes into a collective backup: an ensemble of small models that matches a larger model and degrades gracefully as nodes fail.
+Edge devices fail more often than cloud servers, and conventional fault tolerance, such as cloud failover, full replicas or compressed backups, costs latency, accuracy or resources that edge deployments cannot spare. This work first measures these overheads in real ML pipelines [3], and then introduces HYDRA [2], which turns spare capacity across edge nodes into a collective backup: an ensemble of small models that matches a larger model and degrades gracefully as nodes fail.
 
 ![HYDRA: two model instances whose representations are combined by a lightweight aggregator for higher combined performance](/assets/hydra.png){: .figure}
 
+[2] Gudipaty, K. P. et al. "HYDRA: Multi-Level Ensemble Learning for Failure-Resilient Edge Inference", ACM/IEEE SEC, 2026 ([Link](https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf))<br>
+[3] Gudipaty, K. P. et al. "Practical Considerations for Failure Resilient ML Systems at the Edge", IEEE MILCOM, 2025 ([Link](https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf))
+{: .refs}
+
+---
 
 ## Quantum Computing
 
-During my Masters, I worked on software for quantum error correction and networking. I built [LDPCDecoders.jl](https://github.com/QuantumSavory/LDPCDecoders.jl), an open-source Julia library of fast decoders for quantum LDPC codes in the QuantumSavory ecosystem, and an API layer that gives programmatic access to a distributed quantum network simulator for reproducible research.
+These works build software for quantum error correction and networking: LDPCDecoders.jl [4], an open-source Julia library of fast decoders for quantum LDPC codes in the QuantumSavory ecosystem, and an API layer that gives programmatic access to a distributed quantum network simulator for reproducible research.
+
+[4] https://github.com/QuantumSavory/LDPCDecoders.jl ([Link](https://github.com/QuantumSavory/LDPCDecoders.jl))
+{: .refs}
+
+---
 
 ## Computation in Materials Science
 
-My background before computer science was in metallurgy and materials science, where I first applied computing to physical problems: using machine learning to accelerate ab-initio molecular dynamics simulations of platinum nanoclusters for my undergraduate thesis at IIT Madras, and building image-processing pipelines to detect defects in aircraft components at Boeing.
+These works apply computing to problems in metallurgy and materials science: using machine learning to accelerate ab-initio molecular dynamics simulations of platinum nanoclusters at IIT Madras, and building image-processing pipelines to detect defects in aircraft components at Boeing.
 
 <!--
 ---

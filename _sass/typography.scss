@@ -1,6 +1,12 @@
 @import "vars";
 
 .content {
+    h2, h3, h4 {
+        margin-bottom: 6px;
+    }
+    h2 + *, h3 + *, h4 + * {
+        margin-top: 0;
+    }
     a:hover {
         text-decoration: underline;
     }
@@ -122,6 +128,10 @@
         font-size: 0.65em;
         margin-left: 8px;
     }
+    p.refs {
+        font-size: 0.9em;
+        color: #555;
+    }
     img.figure {
         width: 90%;
         height: auto;
@@ -131,6 +141,24 @@
     @media (max-width: $small-width) {
         img.figure {
             width: 100%;
+        }
+    }
+    .photo-row {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        align-items: flex-start;
+        img {
+            width: 48%;
+            height: auto;
+        }
+    }
+    @media (max-width: $small-width) {
+        .photo-row {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
         }
     }
     img.photo-small {

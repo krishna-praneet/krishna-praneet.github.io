@@ -3,7 +3,7 @@ layout: default
 title: Service
 ---
 
-## Reviewing
+## Conference
 
 - Reviewer, International Conference on Artificial Intelligence and Statistics (AISTATS) 2027
 - Reviewer, Neural Information Processing Systems (NeurIPS) 2026
@@ -13,17 +13,16 @@ title: Service
 
 ---
 
-## Teaching
+## Teaching Assistant
 
 **UMass Amherst**
-- Guest Instructor, Introduction to Machine Learning and Neural Networks, UMass Summer Turing Program (Summer 2026)
-- Teaching Assistant, CS365 Digital Forensics (Fall 2025)
-- Teaching Assistant, CS677 Distributed and Operating Systems (Spring 2025, Spring 2024)
-- Teaching Assistant, CS230 Computer System Principles (Fall 2024)
-- Graduate Assistant, CS677 Distributed and Operating Systems (Fall 2024)
+- CS365 Digital Forensics (Fall 2025)
+- CS677 Distributed and Operating Systems (Spring 2025, Spring 2024)
+- CS230 Computer Systems Principles (Fall 2024)
+
 
 **IITM**
-- Teaching Assistant, MM2061 Computational Phase Transformations (Spring 2020)
+- MM2061 Phase Transformations (Spring 2020)
 
 ---
 
@@ -31,7 +30,7 @@ title: Service
 
 **UMass Amherst**
 - Social Activities Coordinator, LASS Lab (Fall 2024–present)
-- UMass Systems Lunch for Students - Co-Organizer (Fall 2025)
+- Organizer, UMass Systems Lunch for Students (Fall 2025)
 
 **IITM**
 - Sponsorship and Outreach (2018–2019)

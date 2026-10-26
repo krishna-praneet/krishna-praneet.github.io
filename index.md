@@ -19,9 +19,9 @@ layout: default
 
 ## About
 
-I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amherst](https://www.cics.umass.edu/), under the guidance of [Prof. Prashant Shenoy](https://people.cs.umass.edu/~shenoy/). As part of the [Laboratory for Advanced System Software (LASS)](https://lass.cs.umass.edu/), I am currently working on the design of failure-aware model serving system for Foundation Models. More broadly, my research interests include Machine Learning and Artifical Intelligence, Distributed Inference and training, fault-tolerance and resource management on the Edge/IoT. 
+I'm pursuing a Ph.D. in Computer Science at the [University of Massachusetts Amherst](https://www.cics.umass.edu/), under the guidance of [Prof. Prashant Shenoy](https://people.cs.umass.edu/~shenoy/). As part of the [Laboratory for Advanced System Software (LASS)](https://lass.cs.umass.edu/), I am currently working on the design of failure-aware model serving systems for Foundation Models. More broadly, my research interests include Machine Learning and Artificial Intelligence, Distributed Inference and training, fault-tolerance and resource management on the Edge/IoT. 
 
-Prior to this, I have a 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Masters degree in Computer Science from UMass Amherst in 2024, and my Bachelors degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
+Prior to this, I have 2.5+ years of experience as a Software Engineer at multiple firms including Deskera, Publicis Sapient and Boeing. I earned my Master's degree in Computer Science from UMass Amherst in 2024, and my Bachelor's degree from the [Indian Institute of Technology Madras (IITM)](https://www.iitm.ac.in/) in 2020. 
 
 <!-- **I'm actively looking for research internships for Summer 2027 — feel free to [reach out](/contact)!** -->
 
@@ -41,9 +41,9 @@ Prior to this, I have a 2.5+ years of experience as a Software Engineer at multi
 **Jan 2026** | Reviewer for AISTATS 2026 
 **Oct 2025** | Presented our work on Edge ML resilience at IEEE Milcom 2025, Los Angeles 
 **Sep 2025** | [Considerations for Edge ML resilience](https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf) accepted to IEEE Milcom 2025 
-**Jun 2025** | Multi-level ensemble Learning (MEL) is available on [arXiv](https://arxiv.org/abs/2506.20094) 
-**Jul 2024** | Started my phd at UMass Amherst under Dr. Prashant Shenoy!
-**May 2024** | Received my Masters degree from UMass Amherst!
+**Jun 2025** | Multi-Level Ensemble Learning (MEL) is available on [arXiv](https://arxiv.org/abs/2506.20094) 
+**Jul 2024** | Started my Ph.D. at UMass Amherst under Prof. Prashant Shenoy!
+**May 2024** | Received my Master's degree from UMass Amherst!
 
 </div>
 

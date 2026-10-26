@@ -97,29 +97,46 @@
 
 <h2 id="foundation-models">Foundation Models</h2>
 
-<p>Foundation models are general-purpose, but adapting and deploying them is expensive, especially outside the datacenter. My current work looks at how to make the full lifecycle of these models, from post-training to serving, efficient and dependable across cloud and edge hardware.</p>
+<p>Foundation models are general-purpose, but adapting and deploying them is expensive, especially outside the datacenter. This line of work looks at how to make the full lifecycle of these models, from post-training to serving, efficient and dependable across cloud and edge hardware.</p>
 
 <h3 id="post-training-benchmarks-and-efficiency">Post-training Benchmarks and Efficiency</h3>
 
-<p>Choosing how to adapt and deploy a foundation model involves trade-offs that are rarely measured side by side. I study these costs systematically: how post-training methods, from full fine-tuning and parameter-efficient methods to preference optimization, compare in data, compute and accuracy, and how serving choices such as batching and quantization play out across models, hardware and runtimes. Our study of <a href="https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing">foundation models for the edge</a> (MILCOM 2026) showed when general-purpose models can replace task-specific ones at a fraction of the adaptation cost, and we are extending it into a broader benchmarking suite.</p>
+<p>Choosing how to adapt and deploy a foundation model involves trade-offs that are rarely measured side by side. These works study those costs systematically: how post-training methods, from full fine-tuning and parameter-efficient methods to preference optimization, compare in data, compute and accuracy, and how serving choices such as batching and quantization play out across models, hardware and runtimes. A study of foundation models for the edge [1] showed when general-purpose models can replace task-specific ones at a fraction of the adaptation cost, and is being extended into a broader benchmarking suite.</p>
+
+<p><img src="/assets/fms_edge.png" alt="Spectrum from narrow, application-specific models (low memory, compute and energy) to foundation models with adapters (efficient adaptation, minimal data, faster training), with micro foundation models in between" class="figure" /></p>
+
+<p class="refs">[1] Gudipaty, K. P. et al. “Foundation Models for the Edge: Opportunities and Trade-offs”, IEEE MILCOM, 2026 (<a href="https://drive.google.com/file/d/1zWwSRMR3osIy1-XITA-2bAvL3GGaQSDE/view?usp=sharing">Link</a>)</p>
 
 <h3 id="inference-time-adaptation">Inference-time Adaptation</h3>
 
-<p>Deployed models face changing conditions: failures, shifting resources and new latency targets. Rather than retraining or keeping full replicas, I explore treating models as compositions of reusable components that can be reassembled at runtime. This includes stitching model structures together to build lightweight backups for adaptive failover, and reusing LLM representations to build hybrid models that meet latency targets on constrained devices.</p>
+<p>Deployed models face changing conditions: failures, shifting resources and new latency targets. Rather than retraining or keeping full replicas, these works explore treating models as compositions of reusable components that can be reassembled at runtime. This includes stitching model structures together to build lightweight backups for adaptive failover.</p>
+
+<p><img src="/assets/structural_resilience.png" alt="Adaptive foundation model: a backbone B produces features, a stitching layer S maps them into the feature space of decoder A, which produces labels; S is solved in closed form as a least-squares fit" class="figure" /></p>
+
+<hr />
 
 <h2 id="failure-resiliency-for-model-serving">Failure Resiliency for Model Serving</h2>
 
-<p>Edge devices fail more often than cloud servers, and conventional fault tolerance, such as cloud failover, full replicas or compressed backups, costs latency, accuracy or resources that edge deployments cannot spare. I began by measuring these overheads in real ML pipelines (<a href="https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf">MILCOM 2025</a>), and then designed <a href="https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf">HYDRA</a> (SEC 2026), which turns spare capacity across edge nodes into a collective backup: an ensemble of small models that matches a larger model and degrades gracefully as nodes fail.</p>
+<p>Edge devices fail more often than cloud servers, and conventional fault tolerance, such as cloud failover, full replicas or compressed backups, costs latency, accuracy or resources that edge deployments cannot spare. This work first measures these overheads in real ML pipelines [3], and then introduces HYDRA [2], which turns spare capacity across edge nodes into a collective backup: an ensemble of small models that matches a larger model and degrades gracefully as nodes fail.</p>
 
 <p><img src="/assets/hydra.png" alt="HYDRA: two model instances whose representations are combined by a lightweight aggregator for higher combined performance" class="figure" /></p>
 
+<p class="refs">[2] Gudipaty, K. P. et al. “HYDRA: Multi-Level Ensemble Learning for Failure-Resilient Edge Inference”, ACM/IEEE SEC, 2026 (<a href="https://lass.cs.umass.edu/papers/pdf/sec26-hydra.pdf">Link</a>)<br />
+[3] Gudipaty, K. P. et al. “Practical Considerations for Failure Resilient ML Systems at the Edge”, IEEE MILCOM, 2025 (<a href="https://lass.cs.umass.edu/papers/pdf/milcom2025-practical.pdf">Link</a>)</p>
+
+<hr />
+
 <h2 id="quantum-computing">Quantum Computing</h2>
 
-<p>During my Masters, I worked on software for quantum error correction and networking. I built <a href="https://github.com/QuantumSavory/LDPCDecoders.jl">LDPCDecoders.jl</a>, an open-source Julia library of fast decoders for quantum LDPC codes in the QuantumSavory ecosystem, and an API layer that gives programmatic access to a distributed quantum network simulator for reproducible research.</p>
+<p>These works build software for quantum error correction and networking: LDPCDecoders.jl [4], an open-source Julia library of fast decoders for quantum LDPC codes in the QuantumSavory ecosystem, and an API layer that gives programmatic access to a distributed quantum network simulator for reproducible research.</p>
+
+<p class="refs">[4] https://github.com/QuantumSavory/LDPCDecoders.jl (<a href="https://github.com/QuantumSavory/LDPCDecoders.jl">Link</a>)</p>
+
+<hr />
 
 <h2 id="computation-in-materials-science">Computation in Materials Science</h2>
 
-<p>My background before computer science was in metallurgy and materials science, where I first applied computing to physical problems: using machine learning to accelerate ab-initio molecular dynamics simulations of platinum nanoclusters for my undergraduate thesis at IIT Madras, and building image-processing pipelines to detect defects in aircraft components at Boeing.</p>
+<p>These works apply computing to problems in metallurgy and materials science: using machine learning to accelerate ab-initio molecular dynamics simulations of platinum nanoclusters at IIT Madras, and building image-processing pipelines to detect defects in aircraft components at Boeing.</p>
 
 <!--
 ---
